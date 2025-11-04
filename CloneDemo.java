@@ -1,0 +1,41 @@
+
+//class Demo Extends Object
+class Demo implements Cloneable
+{
+    public int j;
+    public int i;
+
+    Demo(int a, int b)
+    {
+        this.i = a;
+        this.j = b;
+    }
+    public Object clone() throws CloneNotSupportedException
+    {
+        return super.clone();
+    }
+
+}
+
+
+class CloneDemo
+{
+    public static void main(String A[]) 
+    {
+        try
+        {
+
+
+        
+        Demo dobj1=new Demo(11,21); 
+        Demo dobj2 = (Demo)dobj1.clone(); 
+
+         System.out.println(dobj1.i);
+         System.out.println(dobj2.j);
+        }
+        catch(CloneNotSupportedException cobj)
+        {}
+
+    }
+
+}

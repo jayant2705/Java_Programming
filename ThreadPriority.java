@@ -1,0 +1,15 @@
+class ThreadPriority
+{
+    public static void main(String A[])
+    {
+        System.out.println("Inside main Method");
+        Thread tobj = Thread.currentThread();
+        String name = tobj.getName ();
+        System.out.println("Name of current thread is :"+name);
+        System.err.println("Priority of current thread is : "+tobj.getPriority());
+        int Priority = tobj.getPriority();
+        System.err.println("Priority of current thread is : "+Priority);
+
+
+    }
+}
